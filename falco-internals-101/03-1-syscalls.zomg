@@ -2,6 +2,8 @@
 Lore
 
 rdtsc: timestamp counter - 64 bit register in x86 processor
+
+Main takeaway: more details on moving syscalls to userspace
 ------------------------------------------------------------------------------------------------------------------------
 
 # Syscalls are hard to manage in userspace

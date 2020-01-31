@@ -3,7 +3,7 @@ Lore
 
 Problem: syscalls are the most primitive and most useful unit from which you can get security insights - but moving all of them to user space is challenging. (Additions: getting syscalls generstes more syscalls, problems with clocks, problems with the data structure and getting arguments)
 
-rdtsc: timestamp counter - 64 bit register in x86 processor
+Takeaway: start introducing the problem of moving syscalls to userspace
 ------------------------------------------------------------------------------------------------------------------------
 
 # Syscalls are very interesting

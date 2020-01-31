@@ -1,0 +1,17 @@
+------------------------------------------------------------------------------------------------------------------------
+Lore
+
+Main takeaway: show the architecture of falco and libraries
+
+Context:
+Interesting code for eBPF implementation:
+userspace/libscap/scap_bpf.c:426
+
+It's basically bpf_raw_tracepoint_open with the filler name as first argument as they are defined in bpf fillers like: driver/bpf/fillers.h:1315
+------------------------------------------------------------------------------------------------------------------------
+
+# How to get syscalls to userspace?
+/!
+// - Implement your own kernel module
+/!
+// - Use eBPF raw tracepoints
