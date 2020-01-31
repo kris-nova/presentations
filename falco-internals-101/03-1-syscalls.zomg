@@ -1,0 +1,17 @@
+------------------------------------------------------------------------------------------------------------------------
+Lore
+
+rdtsc: timestamp counter - 64 bit register in x86 processor
+------------------------------------------------------------------------------------------------------------------------
+
+# Syscalls are hard to manage in userspace
+/!
+### Don't believe me? Do that in a system with millions of syscalls in a second
+/!
+### IT'S NOT 1998 ANYMORE
+/!
+### I mean, to know if a syscall was called you need to do a syscall
+/!
+### And of course to calculate when the syscall happened you need to do a syscall
+
+### Or hack with things like rdtsc
