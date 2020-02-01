@@ -4,11 +4,12 @@ Lore
 Main takeaway: know about how we filter syscalls for performance reasons
 ------------------------------------------------------------------------------------------------------------------------
 
-# Filtering
+# To summarize
 
 /!
-// - Filtering is extremely important for performance reasons
+// - Getting tons of syscalls to userspace is heavy but optimizations can be made
 /!
-// - We only want to bring to userspace the syscalls we actually inspect
+// - You can do it using an eBPF probe or a kernel module
 /!
-// - Only when arguments are matching at kernel level already (still working on this!)
+// - Good boundaries and well defined interfaces make life easier (libscap and libsinsp)
+

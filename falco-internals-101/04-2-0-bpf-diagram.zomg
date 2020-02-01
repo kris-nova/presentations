@@ -22,3 +22,4 @@ Main takeaway: show the architecture of falco and libraries
 //              v   v
 //              eBPF probe
 
+// See driver/bpf/maps.h for FUN! Yes we load additional programs via maps.

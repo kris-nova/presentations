@@ -1,19 +1,16 @@
 ------------------------------------------------------------------------------------------------------------------------
 Lore
 
-Main takeaway: 
+Main takeaway: know about how we filter syscalls for performance reasons
 ------------------------------------------------------------------------------------------------------------------------
 
-# libsinsp
+# Join the community!
 /!
-## Main duties
-/!
-// - Event parsing (sinsp_event)
-/!
-// - Container runtime metadata
-/!
-// - Kubernetes metadata
-/!
-// - Filtering
 /!
 
+## https://github.com/falcosecurity
+
+/!
+/!
+
+## https://falco.org

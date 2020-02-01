@@ -10,15 +10,14 @@ Main takeaway:
 /!
 // - Make sure that every matched syscall has consumable arguments
 // - There are generic ones
-// - Two for every syscall 
-// - Based on data coming from ?????
+// - Two for every syscall
+// - For every one of them a function is created at compile time
 /!
 
 // int f_sys_execve_e(struct event_filler_arguments *args)
 // {
 // 	int res;
 // 	unsigned long val;
-// 
 // 	/*
 // 	 * filename
 // 	 */
@@ -26,10 +25,8 @@ Main takeaway:
 // 	res = val_to_ring(args, val, 0, true, 0);
 // 	if (res == PPM_FAILURE_INVALID_USER_MEMORY)
 // 		res = val_to_ring(args, (unsigned long)"<NA>", 0, false, 0);
-// 
 // 	if (unlikely(res != PPM_SUCCESS))
 // 		return res;
-// 
 // 	return add_sentinel(args);
 // }
 

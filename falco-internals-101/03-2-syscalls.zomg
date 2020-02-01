@@ -1,19 +1,20 @@
 ------------------------------------------------------------------------------------------------------------------------
 Lore
 
-Main takeaway: 
+Main takeaway:
 ------------------------------------------------------------------------------------------------------------------------
 
-# libsinsp
+# Syscalls are NOT enough
 /!
-## Main duties
 /!
-// - Event parsing (sinsp_event)
+## Context is important
 /!
-// - Container runtime metadata
 /!
-// - Kubernetes metadata
+// - Did this syscall originated in a container?
 /!
-// - Filtering
+// - What's the name of the container ?
 /!
-
+// - What's the container image ?
+/!
+// - In which cluster it is running ?
+/!

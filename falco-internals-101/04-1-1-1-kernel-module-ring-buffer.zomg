@@ -7,7 +7,6 @@ Main takeaway:
 
 # Kernel module: Ring Buffer
 /!
-/!
 
 //#ifndef PPM_RINGBUFFER_H_
 //#define PPM_RINGBUFFER_H_
@@ -18,10 +17,6 @@ Main takeaway:
 //
 //static const __u32 RING_BUF_SIZE = 8 * 1024 * 1024;
 //static const __u32 MIN_USERSPACE_READ_SIZE = 128 * 1024;
-//
-///*
-// * This gets mapped to user level, so we want to keep it as clean as possible
-// */
 //struct ppm_ring_buffer_info {
 //	volatile __u32 head;
 //	volatile __u32 tail;

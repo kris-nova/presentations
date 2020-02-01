@@ -24,18 +24,12 @@ It's basically bpf_raw_tracepoint_open with the filler name as first argument as
 // {
 // 	unsigned long val;
 // 	int res;
-// 
-// 	/*
-// 	 * filename
-// 	 */
 // 	val = bpf_syscall_get_argument(data, 0);
 // 	res = bpf_val_to_ring(data, val);
 // 	if (res == PPM_FAILURE_INVALID_USER_MEMORY) {
 // 		char na[] = "<NA>";
-// 
 // 		res = bpf_val_to_ring(data, (unsigned long)na);
 // 	}
-// 
 // 	return res;
 // }
 

@@ -1,19 +1,17 @@
+
 ------------------------------------------------------------------------------------------------------------------------
 Lore
 
 Main takeaway: 
 ------------------------------------------------------------------------------------------------------------------------
 
-# libsinsp
+# Kernel module: Ring Buffer
 /!
-## Main duties
+// - 8 megabytes in memory
 /!
-// - Event parsing (sinsp_event)
+// - event memory is dumped into it from the kernel
 /!
-// - Container runtime metadata
+// - one for each possible cpu
 /!
-// - Kubernetes metadata
+// - userspace reads it from the /dev/falco0..N device
 /!
-// - Filtering
-/!
-
