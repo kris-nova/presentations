@@ -1,11 +1,14 @@
 ------------------------------------------------------------------------------------------------------------------------
 Lore
 
-Main takeaway: show the architecture of falco and libraries
+Main takeaway: 
 ------------------------------------------------------------------------------------------------------------------------
 
-# How to get syscalls to userspace?
+# libscap
 /!
-// - Implement your own kernel module
+## Main duties
 /!
-// - Use eBPF raw tracepoints
+// - Event capture and control
+// - File format management (.scap)
+// - Read and write dumps
+/!

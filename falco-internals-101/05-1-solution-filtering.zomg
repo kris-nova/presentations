@@ -1,0 +1,12 @@
+------------------------------------------------------------------------------------------------------------------------
+Lore
+
+Main takeaway: know about how we filter syscalls for performance reasons
+------------------------------------------------------------------------------------------------------------------------
+
+# Filtering
+
+/!
+// - Filtering is extremely important for performance reasons
+// - We only want to bring to userspace the syscalls we actually inspect
+// - Only when arguments are matching at kernel level already (still working on this!)

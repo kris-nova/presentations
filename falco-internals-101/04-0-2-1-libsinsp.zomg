@@ -1,0 +1,30 @@
+------------------------------------------------------------------------------------------------------------------------
+Lore
+
+Main takeaway: 
+------------------------------------------------------------------------------------------------------------------------
+
+# libsinsp
+
+## Essentially, Falco loops on sinsp events
+
+/!
+// # for slides reasons some glue parts have been omitted
+// # include <sinsp.h>
+// int main(int argc, char **argv)
+// {
+//  # event pointer
+// 	sinsp_evt* ev;
+//  while(1)
+//  {
+//    # next event
+//    rc = inspector->next(&ev);
+//    # process the event against the rules
+//    unique_ptr<falco_engine::rule_result> res = engine->process_sinsp_event(ev);
+//    if(res)
+//    {
+//        # send to the output if there's a match
+//        outputs->handle_event(res->evt, res->rule, res->source, res->priority_num, res->format);
+//    }
+//  }
+// }

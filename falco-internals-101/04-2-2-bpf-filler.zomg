@@ -1,0 +1,43 @@
+------------------------------------------------------------------------------------------------------------------------
+Lore
+
+Main takeaway:
+
+
+Context:
+Interesting code for eBPF implementation:
+userspace/libscap/scap_bpf.c:426
+
+It's basically bpf_raw_tracepoint_open with the filler name as first argument as they are defined in bpf fillers like: driver/bpf/fillers.h:1315
+------------------------------------------------------------------------------------------------------------------------
+
+# eBPF: fillers
+
+/!
+// - Make sure that every matched syscall has consumable arguments
+// - There are generic ones
+// - Two for every syscall
+// - Based on data coming from syscalls static tracepoints (sys_*)
+/!
+
+// FILLER(sys_execve_e, true)
+// {
+// 	unsigned long val;
+// 	int res;
+// 
+// 	/*
+// 	 * filename
+// 	 */
+// 	val = bpf_syscall_get_argument(data, 0);
+// 	res = bpf_val_to_ring(data, val);
+// 	if (res == PPM_FAILURE_INVALID_USER_MEMORY) {
+// 		char na[] = "<NA>";
+// 
+// 		res = bpf_val_to_ring(data, (unsigned long)na);
+// 	}
+// 
+// 	return res;
+// }
+
+
+
